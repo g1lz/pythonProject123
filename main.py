@@ -26,7 +26,7 @@ class Widget(QWidget, Ui_Form):
             qp.end()
 
     def drawCircle(self, qp):
-        qp.setBrush(QColor(255, 204, 0))
+        qp.setBrush(QColor(randint(0, 255), randint(0, 255), randint(0, 255)))
         hw = randint(10, 200)  # diameter
         qp.drawEllipse(150 - hw // 2, 200 - hw // 2, hw, hw)  # x, y, w, h
 
